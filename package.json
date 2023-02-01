@@ -1,7 +1,17 @@
 {
-  "name": "reactpractice",
-  "version": "0.1.0",
+  "name": "react-profile",
+  "version": "1.0.0",
+  "description": "Portfolio site developed using React",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonHarrison/react-portfolio.git"
+  },
+  "author": "Jon Harrison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JonHarrison/react-portfolio/issues"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
