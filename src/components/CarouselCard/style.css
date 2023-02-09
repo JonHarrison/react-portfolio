@@ -1,0 +1,34 @@
+.carousel {
+  /* width: 1200px; */
+  /* height: 800px; */
+  margin: auto;
+}
+
+.carousel > .carousel-item {
+  /* opacity: 0.5; */
+}
+
+.carousel-item {
+  /* height: 60%; */
+}
+
+.carousel-image {
+  height: 70vh;
+  opacity: 0.5;
+  /* min-width: 100%; */
+}
+
+.carousel-item > img
+{
+  /* width: 400px; */
+  /* width: 640px; */
+  /* height: 360px; */
+  /* margin: auto; */
+}
+
+ @media screen and (max-width: 600px) {
+  .carousel {
+    width: auto;
+    height: auto;
+  }
+}
