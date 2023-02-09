@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
@@ -12,8 +12,18 @@ import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import PageNotFound from './pages/PageNotFound';
 
+import projectsData from './data/projects.json';
+
 const App = () => {
 
+    // define app state
+    const [projects, setProjects] = useState([]);
+
+    // set projects state
+    useEffect(() => {
+      setProjects(projectsData);
+    }, []) // [] never changes, so this will only run once
+  
   return (
     <div className="App">
       <Header />
@@ -22,7 +32,7 @@ const App = () => {
           <Route path="/" element={<Home />} errorElement={<PageNotFound />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio" element={<Portfolio projects={projects} />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Main>
