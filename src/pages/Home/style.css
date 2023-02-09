@@ -1,0 +1,4 @@
+.main .home {
+    /* remove top padding so that home page flows under the header navbar */
+    margin-top: -6rem;
+}
