@@ -1,0 +1,23 @@
+body {
+    /* prevent content being covered by header */
+    /* padding-top: 80px; */
+}
+
+/* override standard navbar to fix at top of window and give transparent background */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: url("../../assets/images/transparency.png");
+    background-color: transparent !important;
+    background-size: cover;
+    z-index: 10;
+}
+
+/* override default img style */
+.profile-picture {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    padding-right: 10px;
+    border-radius: 50%; /* put image in a circle */
+}
