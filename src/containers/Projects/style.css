@@ -1,0 +1,16 @@
+.project-container {
+  /* padding-top: 50px; */
+  /* background: #ECEFF1; */
+  /* height: 100%; */
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  justify-content: space-around;
+  align-content: flex-start;
+
+  min-width:0;
+  /* overflow: hidden; */
+  /* overflow: auto; */
+  /* overflow: -moz-scrollbars-vertical; */
+  /* overflow-y: scroll; */
+}
