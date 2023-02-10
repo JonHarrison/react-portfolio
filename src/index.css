@@ -43,11 +43,13 @@
 }
 
 html {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: auto;
   scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 
 /* update fonts */
