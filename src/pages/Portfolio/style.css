@@ -1,10 +1,4 @@
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-}
-
-.carousel-image>.img {
+.carousel-image > .img {
   /* width: 100%; */
   height: 70vh;
   /* fix height of image */
@@ -12,18 +6,4 @@
   /* allows text to be readable */
   object-fit: contain;
   /* show whole image */
-}
-
-@media screen and (max-width: 1024px) {
-  .project-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .project-container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
 }

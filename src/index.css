@@ -43,11 +43,15 @@
 }
 
 html {
+  /* overflow: -moz-scrollbars-vertical; */
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
 }
 
 /* update fonts */
@@ -61,11 +65,26 @@ body {
   color: var(--color-white);
   line-height: 1.7;
   /* background-image: url('./assets/bg-texture.png'); */
+  min-width: 100%;
 }
 
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* width: 100%; */
+  justify-content: center;
+}
+
+.flex-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 h1,h2,h3,h4,h5 {

@@ -16,27 +16,29 @@ import projectsData from './data/projects.json';
 
 const App = () => {
 
-    // define app state
-    const [projects, setProjects] = useState([]);
+  // define app state
+  const [projects, setProjects] = useState([]);
 
-    // set projects state
-    useEffect(() => {
-      setProjects(projectsData);
-    }, []) // [] never changes, so this will only run once
-  
+  // set projects state
+  useEffect(() => {
+    setProjects(projectsData);
+  }, []) // [] never changes, so this will only run once
+
   return (
-    <div className="App">
-      <Header />
-      <Main>
-        <Routes>
-          <Route exact path="/" element={<Home />} errorElement={<PageNotFound />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/portfolio" element={<Portfolio projects={projects} />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-      </Main>
-      <Footer />
+    <div className="App flex-container">
+      <div className="flex-item">
+        <Header />
+        <Main>
+          <Routes>
+            <Route exact path="/" element={<Home />} errorElement={<PageNotFound />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/portfolio" element={<Portfolio projects={projects} />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </Main>
+        <Footer />
+      </div>
     </div>
   );
 }

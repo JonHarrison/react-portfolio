@@ -44,7 +44,7 @@ function PortfolioCarousel({ projects }) {
                             <p>{description}</p>
                             <div className="project-cta">
                                 <a href={git} className='btn'><FaGithub /></a>
-                                <a href={url} className='btn btn-primary' target='_blank'><FaLink /></a>
+                                <a href={url} className='btn btn-primary' target='_blank' rel='noreferrer'><FaLink /></a>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>

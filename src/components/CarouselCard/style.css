@@ -26,7 +26,17 @@
   /* margin: auto; */
 }
 
- @media screen and (max-width: 600px) {
+.carousel-image > .img {
+  /* width: 100%; */
+  height: 70vh;
+  /* fix height of image */
+  opacity: 0.9;
+  /* allows text to be readable */
+  object-fit: contain;
+  /* show whole image */
+}
+
+@media screen and (max-width: 600px) {
   .carousel {
     width: auto;
     height: auto;

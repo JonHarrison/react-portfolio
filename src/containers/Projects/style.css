@@ -1,0 +1,48 @@
+/* grid layout */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  /* overflow-y: scroll; */
+}
+
+/* flex layout */
+.project-container {
+  /* padding-top: 50px; */
+  /* background: #ECEFF1; */
+  /* height: 100%; */
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* align-content: flex-start; */
+
+  /* border: 1px solid red; */
+
+  /* min-width:0; */
+  /* overflow: auto; */
+  /* overflow: auto; */
+  /* overflow: -moz-scrollbars-vertical; */
+  /* overflow-x: scroll; */
+  /* overflow-y: scroll; */
+}
+
+.project-container > div {
+  /* border: 1px solid grey; */
+}
+
+@media screen and (max-width: 1024px) {
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
