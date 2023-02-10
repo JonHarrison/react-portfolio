@@ -25,7 +25,7 @@ const ProjectCard = ({ project }) => {
         <Col className="col col-md-2 project-item d-flex">
             <Card className="card mb-3 bg-dark text-white" >
                 {/* <Card.Header>{title}</Card.Header> */}
-                <Card.Img className="card-img img-fluid img-container project-image img img-fluid rounded-start" variant="top" src={image} alt={title} />
+                <Card.Img className="card-img img img-fluid img-container project-image rounded-start" variant="top" src={image} alt={title} />
                 {/* <Card.ImgOverlay> */}
                 <Card.Body className="card-body">
                     <Card.Title className="card-text">{title}</Card.Title>
