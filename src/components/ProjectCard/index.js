@@ -25,11 +25,11 @@ const ProjectCard = ({ project }) => {
         <Col className="col col-md-2 project-item d-flex">
             <Card className="card mb-3 bg-dark text-white" >
                 {/* <Card.Header>{title}</Card.Header> */}
-                <Card.Img className="img-container project-image img img-fluid rounded-start" variant="top" src={image} alt={title} />
+                <Card.Img className="card-img img-fluid img-container project-image img img-fluid rounded-start" variant="top" src={image} alt={title} />
                 {/* <Card.ImgOverlay> */}
-                <Card.Body>
-                    <Card.Title>{title}</Card.Title>
-                    <Card.Text as="h6" class="text-muted">{description}</Card.Text>
+                <Card.Body className="card-body">
+                    <Card.Title className="card-text">{title}</Card.Title>
+                    <Card.Text as="h6" class="card-text text-muted">{description}</Card.Text>
                     {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
                 </Card.Body>

@@ -25,20 +25,22 @@ const App = () => {
   }, []) // [] never changes, so this will only run once
 
   return (
-    <div className="App flex-container">
-      <div className="flex-item">
-        <Header />
-        <Main>
-          <Routes>
-            <Route exact path="/" element={<Home />} errorElement={<PageNotFound />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/portfolio" element={<Portfolio projects={projects} />} />
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-        </Main>
-        <Footer />
-      </div>
+    <div className="App flexbox-container">
+      <Header className="flexbox-item header" />
+      {/* <div class="flexbox-item fill-area content flexbox-item-grow"> */}
+        {/* <div class="fill-area-content flexbox-item-grow"> */}
+          <Main className="flexbox-item main">
+            <Routes>
+              <Route exact path="/" element={<Home />} errorElement={<PageNotFound />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/portfolio" element={<Portfolio projects={projects} />} />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </Main>
+        {/* </div> */}
+      {/* </div> */}
+      <Footer className="flexbox-item footer" />
     </div>
   );
 }
