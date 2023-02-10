@@ -22,7 +22,7 @@ import './style.css';
 const ProjectCard = ({ project }) => {
     const { id, title, category, url, git, image, description } = project;
     return (
-        <Col className="col col-md-4 project-item d-flex ">
+        <Col className="col col-md-2 project-item d-flex">
             <Card className="card mb-3 bg-dark text-white" >
                 {/* <Card.Header>{title}</Card.Header> */}
                 <Card.Img className="img-container project-image img img-fluid rounded-start" variant="top" src={image} alt={title} />

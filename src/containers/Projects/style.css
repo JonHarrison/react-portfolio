@@ -13,16 +13,16 @@
   /* height: 100%; */
   display: flex;
   flex-flow: row wrap;
-  /* padding: 20px; */
+  padding: 20px;
+  /* justify-content: center; */
   /* justify-content: space-around; */
   /* justify-content: space-between; */
-  justify-content: center;
-  align-content: flex-start;
+  /* align-content: flex-start; */
 
   /* border: 1px solid red; */
 
-  min-width:0;
-  overflow: auto;
+  /* min-width:0; */
+  /* overflow: auto; */
   /* overflow: auto; */
   /* overflow: -moz-scrollbars-vertical; */
   /* overflow-x: scroll; */

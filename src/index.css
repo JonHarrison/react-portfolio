@@ -43,7 +43,9 @@
 }
 
 html {
-  overflow: -moz-scrollbars-vertical;
+  /* overflow: -moz-scrollbars-vertical; */
+  overflow: hidden;
+  overflow-x: hidden;
   overflow-y: auto;
   scroll-behavior: smooth;
 }
@@ -63,6 +65,7 @@ body {
   color: var(--color-white);
   line-height: 1.7;
   /* background-image: url('./assets/bg-texture.png'); */
+  min-width: 100%;
 }
 
 .container {

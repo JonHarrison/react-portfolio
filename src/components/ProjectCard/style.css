@@ -1,3 +1,7 @@
+.project-item {
+  flex-grow: 1;
+}
+
 .card {
   /* background: red; */
   overflow: hidden;
@@ -8,6 +12,7 @@
   /* box-shadow: 0 3px 6px #999, 0 3px 6px #999; */
   text-align: left;
   flex-grow: 1;
+  /* width: 100vw; */
 
   border-width: 1;
   border-color: #444;
@@ -89,4 +94,16 @@
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 33vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 50vw;
+  }
 }
