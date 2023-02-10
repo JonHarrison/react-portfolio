@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -24,24 +24,28 @@ const App = () => {
     setProjects(projectsData);
   }, []) // [] never changes, so this will only run once
 
+  const basename = document.querySelector('base')?.getAttribute('href') ?? '/';
+
   return (
-    <div className="App flexbox-container">
-      <Header className="flexbox-item header" />
-      {/* <div class="flexbox-item fill-area content flexbox-item-grow"> */}
+    <Router basename={basename}>
+      <div className="App flexbox-container">
+        <Header className="flexbox-item header" />
+        {/* <div class="flexbox-item fill-area content flexbox-item-grow"> */}
         {/* <div class="fill-area-content flexbox-item-grow"> */}
-          <Main className="flexbox-item main">
-            <Routes>
-              <Route exact path="/" element={<Home />} errorElement={<PageNotFound />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/portfolio" element={<Portfolio projects={projects} />} />
-              <Route path="*" element={<PageNotFound />} />
-            </Routes>
-          </Main>
+        <Main className="flexbox-item main">
+          <Routes>
+            <Route exact path="/" element={<Home />} errorElement={<PageNotFound />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/portfolio" element={<Portfolio projects={projects} />} />
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </Main>
         {/* </div> */}
-      {/* </div> */}
-      <Footer className="flexbox-item footer" />
-    </div>
+        {/* </div> */}
+        <Footer className="flexbox-item footer" />
+      </div>
+    </Router>
   );
 }
 
