@@ -10,15 +10,6 @@
     },
     {
         "id": "2",
-        "title": "Team profile generator",
-        "category": "",
-        "url": "",
-        "git": "https://github.com/JonHarrison/team-profile-generator",
-        "image": "",
-        "description": "This Node.JS application transforms information about employees in a software engineering team into an HTML webpage that displays a summary for each team member"
-    },
-    {
-        "id": "3",
         "title": "Weather Dashboard",
         "category": "",
         "url": "https://jonharrison.github.io/weather-dashboard/",
@@ -27,7 +18,7 @@
         "description": "Web page using openweathermap to retrieve a 5 day forecast for a specified city"
     },
     {
-        "id": "4",
+        "id": "3",
         "title": "Password Generator",
         "category": "",
         "url": "https://jonharrison.github.io/password-generator/",
@@ -36,7 +27,7 @@
         "description": "Web page that generates a secure random password"
     },
     {
-        "id": "5",
+        "id": "4",
         "title": "Rock Paper Scissors Lizard Spock",
         "category": "",
         "url": "https://jonharrison.github.io/rock-paper-scissors-lizard-spock/",
@@ -45,7 +36,7 @@
         "description": "Inspired by the Big Bang Theory and an investigation into linking HTML and Javascript"
     },
     {
-        "id": "6",
+        "id": "5",
         "title": "Code quiz",
         "category": "",
         "url": "https://jonharrison.github.io/code-quiz/",
@@ -54,16 +45,7 @@
         "description": "Timed multiple-choice code quiz"
     },
     {
-        "id": "7",
-        "title": "README.md generator",
-        "category": "Node.JS Inquirer Jest",
-        "url": "",
-        "git": "https://github.com/JonHarrison/readme-generator",
-        "image": "",
-        "description": "This project provides a command-line application to generate a README.md file from a user's input using the inquirer package"
-    },
-    {
-        "id": "8",
+        "id": "6",
         "title": "Work Day Scheduler",
         "category": "jQuery Moment.js Bootstrap Fontawesome",
         "url": "https://jonharrison.github.io/work-day-scheduler/",
