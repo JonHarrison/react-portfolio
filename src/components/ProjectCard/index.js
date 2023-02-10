@@ -29,7 +29,7 @@ const ProjectCard = ({ project }) => {
                 {/* <Card.ImgOverlay> */}
                 <Card.Body className="card-body">
                     <Card.Title className="card-text">{title}</Card.Title>
-                    <Card.Text as="h6" class="card-text text-muted">{description}</Card.Text>
+                    <Card.Text as="h6" className="card-text text-muted">{description}</Card.Text>
                     {/* <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p> */}
                 </Card.Body>
