@@ -29,6 +29,12 @@
   /* overflow-y: scroll; */
 }
 
+.project-container {
+  min-height: 100%;
+  padding-bottom: 100px;
+  overflow: auto;
+}
+
 .project-container > div {
   /* border: 1px solid grey; */
 }
