@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "title": "Energise",
+        "category": "",
+        "url": "https://jonharrison.github.io/energise/",
+        "git": "https://github.com/JonHarrison/energise",
+        "image": "https://github.com/JonHarrison/energise/raw/development/docs/homepage.png",
+        "description": "An app to find electric vehicle charging points near your location and show the nearest coffee shop where you can relax whilst your EV charges"
+    },
+    {
+        "id": "2",
+        "title": "Team profile generator",
+        "category": "",
+        "url": "",
+        "git": "https://github.com/JonHarrison/team-profile-generator",
+        "image": "https://placehold.it/350x350?text='Blank Image'",
+        "description": "This Node.JS application transforms information about employees in a software engineering team into an HTML webpage that displays a summary for each team member"
+    },
+    {
+        "id": "3",
+        "title": "Weather Dashboard",
+        "category": "",
+        "url": "https://jonharrison.github.io/weather-dashboard/",
+        "git": "https://github.com/JonHarrison/weather-dashboard",
+        "image": "https://user-images.githubusercontent.com/1043077/209961446-1a49c2d7-bb40-4f6d-b435-d2b3f094c310.png",
+        "description": "Web page using openweathermap to retrieve a 5 day forecast for a specified city"
+    },
+    {
+        "id": "4",
+        "title": "Password Generator",
+        "category": "",
+        "url": "https://jonharrison.github.io/password-generator/",
+        "git": "https://github.com/JonHarrison/password-generator",
+        "image": "https://user-images.githubusercontent.com/1043077/202894373-8adff79a-1cd3-4a48-8925-251de925f8f4.png",
+        "description": "Web page that generates a secure random password"
+    },
+    {
+        "id": "5",
+        "title": "Rock Paper Scissors Lizard Spock",
+        "category": "",
+        "url": "",
+        "git": "https://github.com/JonHarrison/rock-paper-scissors-lizard-spock",
+        "image": "https://placehold.it/350x350?text='Blank Image'",
+        "description": "Inspired by the Big Bang Theory and an investigation into linking HTML and Javascript"
+    },
+    {
+        "id": "6",
+        "title": "Code quiz",
+        "category": "",
+        "url": "https://jonharrison.github.io/code-quiz/",
+        "git": "https://github.com/JonHarrison/code-quiz",
+        "image": "https://user-images.githubusercontent.com/1043077/205377317-33432fb6-19ab-46e6-a43c-e6e9a7ba6d85.png",
+        "description": "Timed multiple-choice code quiz"
+    }
+]

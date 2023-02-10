@@ -1,0 +1,34 @@
+.about {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.about_container {
+    /* padding-top: 100px; */
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.headshot {
+    /* background: linear-gradient( var(--color-primary), transparent ) ; */
+    /* width: 22rem; */
+    /* height: 30rem; */
+    /* left: calc(50% - 11rem); */ /* center */
+    /* border-radius: 12rem 12rem 0 0; */
+
+    width: 10rem;
+    position: absolute;
+    left: calc(50% - 40rem);
+    margin-top: -16rem;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* Download Resume and Let's Talk */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
