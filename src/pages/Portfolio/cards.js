@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 
+import Row from 'react-bootstrap/Row';
+
 import ProjectCard from '../../components/ProjectCard';
-import Wrapper from '../../containers/Wrapper';
+import Projects from '../../containers/Projects';
 
 const PortfolioCards = ({ projects }) => {
     return (
-        <Wrapper>
-            <div className="flex flex-row flex-wrap" id="projects">
+        <Projects id="projects">
                 {/* <h2>Projects list</h2> */ }
-                <div className="row project-container" >
+                <Row className="row" >
                     { projects && projects.map((project) => {
                         return <ProjectCard
                             key={project.id}
                             project={project}
                         />;
                     })}
-                </div>
-            </div>
-        </Wrapper>
+                </Row>
+        </Projects>
     );
 
 }
