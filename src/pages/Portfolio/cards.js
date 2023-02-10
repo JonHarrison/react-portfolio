@@ -7,7 +7,7 @@ import Projects from '../../containers/Projects';
 
 const PortfolioCards = ({ projects }) => {
     return (
-        <Projects id="projects">
+        <Projects className="project-container" id="project">
                 {/* <h2>Projects list</h2> */ }
                 <Row className="row" >
                     { projects && projects.map((project) => {
