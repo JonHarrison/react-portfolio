@@ -4,4 +4,8 @@
     /* prevent content being covered by navbar */
     padding-top: 6rem;
     /* overflow: scroll; */
+
+    /* center children */
+    align-content: center;
+    justify-content: center;
 }

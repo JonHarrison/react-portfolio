@@ -58,6 +58,11 @@ html, body {
   scroll-behavior: smooth;
 }
 
+#root {
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
 ::-webkit-scrollbar {
   /* display: none; */
 }
@@ -95,7 +100,7 @@ body {
 
 .flexbox-item
 {
-    padding: 8px;
+    /* padding: 8px; */
 }
 
 .flexbox-item-grow

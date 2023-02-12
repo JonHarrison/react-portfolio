@@ -34,6 +34,7 @@ const App = () => {
     <Router basename={basename}>
       <div className="App flexbox-parent">
         <Header />
+        <Footer contacts={contacts} />
         <Main>
           <Routes>
             <Route exact path="/" element={<Home />} errorElement={<PageNotFound />} />
@@ -45,7 +46,6 @@ const App = () => {
             <Route path="404" element={<PageNotFound />} />
           </Routes>
         </Main>
-        <Footer contacts={contacts} />
       </div>
     </Router>
   );
