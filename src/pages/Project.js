@@ -1,12 +1,17 @@
-import React, { useParams } from 'react'
+import React from 'react'
 
-const Project = (projects) => {
-    const params = useParams();
-    const project = projects.find((project) => project.id === params.id);
-    // then what ?
+import { useParams } from 'react-router-dom'
+
+import ProjectCard from '../components/ProjectCard';
+
+import projects from '../data/projects.json';
+
+const Project = () => {
+    const { id } = useParams();
+    const project = projects.find((project) => project.id === id);
 
     return (
-        <div>Project</div>
+        <ProjectCard project={project} />
     )
 }
 

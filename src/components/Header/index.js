@@ -3,8 +3,11 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { LinkContainer } from 'react-router-bootstrap';
+
+import projects from '../../data/projects.json';
 
 import './style.css';
 
@@ -23,7 +26,18 @@ const Header = props => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
               <LinkContainer to="/about"><Nav.Link>About</Nav.Link></LinkContainer>
-              <LinkContainer to="/portfolio"><Nav.Link>Portfolio</Nav.Link></LinkContainer>
+              <NavDropdown variant="dark" className="dropdown-menu-dark" title="Portfolio" id="basic-nav-dropdown">
+                <LinkContainer to="/portfolio">
+                  <NavDropdown.Item>All</NavDropdown.Item>
+                </LinkContainer>
+                <NavDropdown.Divider />
+                { projects && projects.map((project) => {
+                  let link = "/project/" + project.id;
+                  return (<LinkContainer to={link}>
+                    <NavDropdown.Item>{project.title}</NavDropdown.Item>
+                  </LinkContainer>
+                  )})}
+              </NavDropdown>
               <LinkContainer to="/contact"><Nav.Link>Contact</Nav.Link></LinkContainer>
               {/* <Nav.Link href="./assets/files/CV.pdf" target="_blank" rel="noopener noreferrer">Resume</Nav.Link> */}
               {/* <Nav.Link><a href="./assets/files/CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a></Nav.Link> */}
