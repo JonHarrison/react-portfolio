@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -43,7 +43,8 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio" element={<Portfolio projects={projects} />} />
             <Route path="/project/:id" element={<Project projects={projects} />} />
-            <Route path="*" element={<PageNotFound />} />
+            <Route path={"*"} element={<Navigate to={"/404"} />}/>
+            <Route path="404" element={<PageNotFound />} />
           </Routes>
         </Main>
         {/* </div> */}
