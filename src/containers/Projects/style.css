@@ -1,3 +1,11 @@
+.project-container .header, .footer {
+  background-color: var(--color-bg); /* solid background colour so that project container doesn't visibly overflow footer */
+}
+
+.project-container .header .navbar {
+  background: none;
+}
+
 /* grid layout */
 .project-container {
   display: grid;
@@ -26,12 +34,18 @@
   /* overflow: auto; */
   /* overflow: -moz-scrollbars-vertical; */
   /* overflow-x: scroll; */
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
 }
 
 .project-container {
-  min-height: 100%;
-  padding-bottom: 100px;
+  z-index: 1;
+
+  flex: 1 0 auto;
+  min-width: 0;
+
+  min-height: 100%; /* force the project-container element not get any smaller than the window height */
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
   overflow: auto;
 }
 

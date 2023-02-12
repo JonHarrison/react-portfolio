@@ -122,6 +122,12 @@
   margin-bottom: 1rem;
 }
 
+/* @media screen and (max-width: 1400px) {
+  .card {
+    width: 25vw;
+  }
+} */
+
 @media screen and (max-width: 1024px) {
   .card {
     width: 33vw;
