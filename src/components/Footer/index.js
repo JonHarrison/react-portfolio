@@ -12,15 +12,22 @@ import { FaGithub } from 'react-icons/fa';
 
 import "./style.css";
 
-const Footer = () => {
+const Icons = {
+    'FaPhone': FaPhone,
+    'FaEnvelope': FaEnvelope,
+    'BsLinkedin': BsLinkedin,
+    'FaGithub': FaGithub
+}
+
+const Footer = ({ contacts }) => {
     return (
         // <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg" fixed="bottom" id="footer">
         // <Container fluid>
 
-        <div className="fixed-bottom">
-            <footer className="footer footer--pin flex flex-col justify-center items-center" id="footer">
+        // <div className="fixed-bottom">
+            <footer className="footer fixed-bottom" id="footer">
 
-                <div className="container">
+                {/* <div className="container"> */}
 
                     {/* <div as="h6" className="text-center">Connect with me</div> */}
 
@@ -28,6 +35,18 @@ const Footer = () => {
                     <div className="footer-section">
 
                         <div className="contact-list flex justify-center text-center my-3">
+
+                            {contacts && contacts.map((contact) => {
+                                const { icon, link, text} = contact;
+                                console.log({contact});
+                                {/* <Icon /> */}
+                                let Icon = Icons[icon];
+                                console.log({Icon});
+                                {/* return(<a className="footer-link" href={link}>
+                                {/* dangerouslySetInnerHTML={{__html: {Component}}}
+                                    <p className="contact-text px-3">{text}</p>
+                                </a>); */}
+                            })}
 
                             <a className="footer-link rounded" href="tel:+123456789">
                                 <FaPhone />
@@ -57,11 +76,11 @@ const Footer = () => {
                     {/* <!-- Copyright message --> */}
                     <div as="h6" className="text-center">Copyright &copy; Jon Harrison <script>document.write(new Date().getFullYear())</script>. All rights reserved.</div>
 
-                </div>
+                {/* </div> */}
 
             </footer>
 
-        </div>
+        // </div>
     )
 }
 
