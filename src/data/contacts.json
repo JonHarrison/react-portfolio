@@ -1,0 +1,22 @@
+[
+    {
+        "icon": "FaPhone",
+        "link": "tel:123456789",
+        "text": "Phone me"
+    },
+    {
+        "icon": "FaEnvelope",
+        "link": "mailto:someone@me.com",
+        "text": "Email me"
+    },
+    {
+        "icon": "FaGitHub",
+        "link": "https://github.com/JonHarrison",
+        "text": "Find me on GitHub"
+    },
+    {
+        "icon": "BsLinkedin",
+        "link": "https://uk.linkedin.com/",
+        "text": "Find me on LinkedIn"
+    }
+]

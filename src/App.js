@@ -13,15 +13,18 @@ import Portfolio from './pages/Portfolio';
 import PageNotFound from './pages/PageNotFound';
 
 import projectsData from './data/projects.json';
+import contactsData from './data/contacts.json';
 
 const App = () => {
 
   // define app state
   const [projects, setProjects] = useState([]);
+  const [contacts, setContacts] = useState([]);
 
   // set projects state
   useEffect(() => {
     setProjects(projectsData);
+    setContacts(contactsData);
   }, []) // [] never changes, so this will only run once
 
   const basename = document.querySelector('base')?.getAttribute('href') ?? '/';
@@ -43,7 +46,7 @@ const App = () => {
         </Main>
         {/* </div> */}
         {/* </div> */}
-        <Footer className="flexbox-item footer" />
+        <Footer className="flexbox-item footer" contacts={contacts} />
       </div>
     </Router>
   );
