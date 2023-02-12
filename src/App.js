@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
+import Project from './pages/Project';
 import PageNotFound from './pages/PageNotFound';
 
 import projectsData from './data/projects.json';
@@ -41,6 +42,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio" element={<Portfolio projects={projects} />} />
+            <Route path="/project/:id" element={<Project projects={projects} />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </Main>

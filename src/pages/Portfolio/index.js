@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import PortfolioCards from './cards.js';
 // import CarouselCards from './carousel.js';
