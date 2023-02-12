@@ -42,7 +42,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/portfolio" element={<Portfolio projects={projects} />} />
-            <Route path="/project/:id" element={<Project projects={projects} />} />
+            <Route path="/project/:id" element={<Project />} />
             <Route path={"*"} element={<Navigate to={"/404"} />}/>
             <Route path="404" element={<PageNotFound />} />
           </Routes>
