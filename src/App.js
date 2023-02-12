@@ -32,11 +32,9 @@ const App = () => {
 
   return (
     <Router basename={basename}>
-      <div className="App flexbox-container">
-        <Header className="flexbox-item header" />
-        {/* <div class="flexbox-item fill-area content flexbox-item-grow"> */}
-        {/* <div class="fill-area-content flexbox-item-grow"> */}
-        <Main className="flexbox-item main">
+      <div className="App flexbox-parent">
+        <Header />
+        <Main>
           <Routes>
             <Route exact path="/" element={<Home />} errorElement={<PageNotFound />} />
             <Route path="/about" element={<About />} />
@@ -47,9 +45,7 @@ const App = () => {
             <Route path="404" element={<PageNotFound />} />
           </Routes>
         </Main>
-        {/* </div> */}
-        {/* </div> */}
-        <Footer className="flexbox-item footer" contacts={contacts} />
+        <Footer contacts={contacts} />
       </div>
     </Router>
   );

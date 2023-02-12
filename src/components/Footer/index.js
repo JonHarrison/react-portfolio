@@ -25,7 +25,7 @@ const Footer = ({ contacts }) => {
         // <Container fluid>
 
         // <div className="fixed-bottom">
-            <footer className="footer fixed-bottom" id="footer">
+            <footer className="footer flexbox-item fixed-bottom" id="footer">
 
                 {/* <div className="container"> */}
 
