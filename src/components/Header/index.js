@@ -27,16 +27,16 @@ const Header = props => {
             <Nav className="ms-auto">
               <LinkContainer to="/about"><Nav.Link>About</Nav.Link></LinkContainer>
               <NavDropdown variant="dark" className="dropdown-menu-dark" align="end" title="Portfolio" id="basic-nav-dropdown">
-                <LinkContainer to={{ pathname:"/portfolio", search:"?layout=grid" }}>
+                <LinkContainer to={{ pathname:"/portfolio", search:"?layout=grid" }} key="link-portfolio-grid">
                   <NavDropdown.Item>All (grid)</NavDropdown.Item>
                 </LinkContainer>
-                <LinkContainer to={{ pathname:"/portfolio", search:"?layout=carousel" }}>
+                <LinkContainer to={{ pathname:"/portfolio", search:"?layout=carousel" }} key="link-portfolio-carousel">
                   <NavDropdown.Item>All (carousel)</NavDropdown.Item>
                 </LinkContainer>
                 <NavDropdown.Divider />
                 { projects && projects.map((project) => {
                   let link = "/project/" + project.id;
-                  return (<LinkContainer to={link}>
+                  return (<LinkContainer to={link} key={project.id}>
                     <NavDropdown.Item>{project.title}</NavDropdown.Item>
                   </LinkContainer>
                   )})}

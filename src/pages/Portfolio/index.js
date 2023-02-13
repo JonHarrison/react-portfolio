@@ -15,10 +15,10 @@ const Portfolio = ({ projects }) => {
 
     switch (layout) {
         case "carousel":
-            return (<CarouselCards projects={projects} /> );
+            return (<CarouselCards projects={projects} key="portfolio-carousel" /> );
         case "grid":
         default:
-            return (<PortfolioCards projects={projects} />);
+            return (<PortfolioCards projects={projects} key="portfolio-cards" />);
     }
 };
 
