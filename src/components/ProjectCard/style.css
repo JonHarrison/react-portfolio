@@ -129,14 +129,20 @@
   }
 } */
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 800px) {
   .project-item {
-    /* max-width: 33vw; */
+    max-width: 50vw;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1024px) {
   .project-item {
-    /* max-width: 50vw; */
+    max-width: 33vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .project-item {
+    max-width: 100vw;
   }
 }
