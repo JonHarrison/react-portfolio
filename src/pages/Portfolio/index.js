@@ -9,13 +9,16 @@ import './style.css';
 
 const Portfolio = ({ projects }) => {
 
-    const { query, search } = useLocation()
+    const { search } = useLocation()
     const layout = new URLSearchParams(search).get('layout');
     console.log(layout);
 
     switch (layout) {
-        case "grid": return (<PortfolioCards projects={projects} />); break;
-        case "carousel": return (<CarouselCards projects={projects} /> ); break;
+        case "carousel":
+            return (<CarouselCards projects={projects} /> );
+        case "grid":
+        default:
+            return (<PortfolioCards projects={projects} />);
     }
 };
 
