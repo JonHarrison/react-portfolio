@@ -16,7 +16,7 @@ import ProfilePicture from "../../assets/images/1043077.png";
 const Header = props => {
 
   return (
-    <header className="header flexbox-item">
+    <header className="header flexbox-item fixed-top">
       <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg" fixed="top" id="navbar">
         <Container fluid>
           <LinkContainer to="/">
