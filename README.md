@@ -21,7 +21,7 @@ This project is the initial scaffolding for my first React portfolio site as a s
 3. [License](#license)
 4. [Contributing](#contributing)
 5. [Tests](#tests)
-6. [Website](#website)
+6. [Website](#website-image)
 7. [Links](#links)
 8. [Technologies Used](#technologies-used)
 9. [Questions](#questions)
