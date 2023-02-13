@@ -53,18 +53,15 @@
   /* border: 1px solid grey; */
 }
 
-@media screen and (max-width: 1024px) {
+/* mobile first layout */
+@media screen and (min-width: 576px) {
   .project-container {
-    /* flex: 1fr 1fr 1fr; */
+    flex-direction: row;
+    /* display: flex;
+    flex-flow: row wrap; */
     /* flex-direction: column; */
-    /* grid-template-columns: 1fr 1fr;
-    gap: 1.2rem; */
   }
-}
-
-@media screen and (max-width: 600px) {
-  .project-container {
-    /* grid-template-columns: 1fr;
-    gap: 1rem; */
+  .project-item {
+    /* flex: 33vw; */
   }
 }

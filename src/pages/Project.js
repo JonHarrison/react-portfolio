@@ -11,7 +11,7 @@ const Project = () => {
     const project = projects.find((project) => project.id === id);
 
     return (
-        <ProjectCard class="container" project={project} />
+        <ProjectCard class="project project-container container" project={project} />
     )
 }
 
