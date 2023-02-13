@@ -20,6 +20,7 @@ const Icons = {
 }
 
 const Footer = ({ contacts }) => {
+    let year = new Date().getFullYear();
     return (
         // <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg" fixed="bottom" id="footer">
         // <Container fluid>
@@ -74,7 +75,7 @@ const Footer = ({ contacts }) => {
                     {/* <!-- socials --> */}
 
                     {/* <!-- Copyright message --> */}
-                    <div as="h6" className="text-center">Copyright &copy; Jon Harrison <script>document.write(new Date().getFullYear())</script>. All rights reserved.</div>
+                    <div as="h6" className="text-center">Copyright &copy; Jon Harrison {year}. All rights reserved.</div>
 
                 {/* </div> */}
 
