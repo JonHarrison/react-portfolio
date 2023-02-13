@@ -7,7 +7,7 @@ import "./style.css";
 const Main = (props) => {
     return (
         // <Outlet>
-            <main className="main">{props.children}</main>
+            <main className="main flexbox-item fill-area content flexbox-item-grow">{props.children}</main>
         // </Outlet>
     );
 }

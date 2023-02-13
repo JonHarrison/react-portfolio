@@ -1,8 +1,16 @@
+.project-container .header, .footer {
+  /* background-color: var(--color-bg); */ /* solid background colour so that project container doesn't visibly overflow footer */
+}
+
+.project-container .header .navbar {
+  background: none;
+}
+
 /* grid layout */
 .project-container {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  gap: 2.5rem; */
   /* overflow-y: scroll; */
 }
 
@@ -22,27 +30,38 @@
   /* border: 1px solid red; */
 
   /* min-width:0; */
-  /* overflow: auto; */
+  overflow: hidden;
   /* overflow: auto; */
   /* overflow: -moz-scrollbars-vertical; */
   /* overflow-x: scroll; */
-  /* overflow-y: scroll; */
+  overflow-y: auto;
+}
+
+.project-container {
+  /* z-index: 1; */
+
+  /* flex: 1 0 auto; */
+  /* min-width: 0; */
+
+  /* min-height: 100%; */ /* force the project-container element not get any smaller than the window height */
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+  /* overflow: auto; */
 }
 
 .project-container > div {
   /* border: 1px solid grey; */
 }
 
-@media screen and (max-width: 1024px) {
+/* mobile first layout */
+@media screen and (min-width: 576px) {
   .project-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
+    /* flex-direction: row; */
+    /* display: flex;
+    flex-flow: row wrap; */
+    /* flex-direction: column; */
   }
-}
-
-@media screen and (max-width: 600px) {
-  .project-container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+  .project-item {
+    /* flex: 33vw; */
   }
 }

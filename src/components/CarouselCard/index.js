@@ -20,7 +20,7 @@ import './style.css';
 
 const CarouselCard = React.forwardRef(({project}, ref) => {
     const { id, title, category, url, git, image, description } = project;
-    console.log({project});
+    // console.log({project});
     return (
         <Carousel.Item className="carousel-item item">
             <div className="carousel-image">

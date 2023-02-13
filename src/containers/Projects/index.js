@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 function Projects(props) {
-  return <div className="project-container">{props.children}</div>;
+  return <projects className="fill-area-content flexbox-item-grow project-container">{props.children}</projects>;
 }
 
 export default Projects;
