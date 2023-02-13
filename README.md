@@ -22,8 +22,9 @@ This project is the initial scaffolding for my first React portfolio site as a s
 4. [Contributing](#contributing)
 5. [Tests](#tests)
 6. [Website](#website)
-7. [Technologies Used](#technologies-used)
-8. [Questions](#questions)
+7. [Links](#links
+8. [Technologies Used](#technologies-used)
+9. [Questions](#questions)
 
 ## Installation
 The project is developed using React
@@ -52,11 +53,14 @@ This project includes unit tests written using the Jest framework, to run the te
 npm test
 ```
 
-## Website
-
-![Live website](https://github.com/JonHarrison/react-portfolio/deployments/activity_log?environment=github-pages)
+## Website image
 
 ![Website image](https://user-images.githubusercontent.com/1043077/218472368-cd1deace-3589-4245-948b-c2d752d50102.png)
+
+## Links
+
+* [Link to the deployed website](https://github.com/JonHarrison/react-portfolio/deployments/activity_log?environment=github-pages)
+* [Link to the code repository](https://github.com/JonHarrison/react-portfolio)
 
 ## Technologies Used
 
