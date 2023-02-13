@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -28,10 +29,8 @@ const App = () => {
     setContacts(contactsData);
   }, []) // [] never changes, so this will only run once
 
-  const basename = document.querySelector('base')?.getAttribute('href') ?? '/';
 
   return (
-    <Router basename={basename}>
       <div className="App flexbox-parent">
         <Header />
         <Main>
@@ -47,7 +46,6 @@ const App = () => {
         </Main>
         <Footer contacts={contacts} />
       </div>
-    </Router>
   );
 }
 
