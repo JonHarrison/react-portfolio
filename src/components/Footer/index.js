@@ -38,10 +38,10 @@ const Footer = ({ contacts }) => {
 
                             {contacts && contacts.map((contact) => {
                                 const { icon, link, text} = contact;
-                                console.log({contact});
+                                {/* console.log({contact}); */}
                                 {/* <Icon /> */}
                                 let Icon = Icons[icon];
-                                console.log({Icon});
+                                {/* console.log({Icon}); */}
                                 {/* return(<a className="footer-link" href={link}>
                                 {/* dangerouslySetInnerHTML={{__html: {Component}}}
                                     <p className="contact-text px-3">{text}</p>

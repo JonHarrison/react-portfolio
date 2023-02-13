@@ -11,7 +11,7 @@ const Portfolio = ({ projects }) => {
 
     const { search } = useLocation()
     const layout = new URLSearchParams(search).get('layout');
-    console.log(layout);
+    // console.log(layout);
 
     switch (layout) {
         case "carousel":

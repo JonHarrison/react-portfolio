@@ -7,10 +7,6 @@ import InputGroup from 'react-bootstrap/InputGroup';
 
 import * as emailAPI from '../utils/emailAPI';
 
-// import { Form, Button, Checkbox} from 'react-bootstrap';
-
-// import Learn from './Learn';
-
 // https://www.positronx.io/how-to-build-a-simple-contact-form-in-react-js-app/
 
 const Contact = (props) => {
@@ -19,7 +15,7 @@ const Contact = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     setFormStatus('Submitting...');
-    console.log(e.target);
+    // console.log(e.target);
     const { name, email, subject, message } = e.target.elements;
     let contactForm = {
       name: name.value,
@@ -27,7 +23,7 @@ const Contact = (props) => {
       subject: subject.value,
       message: message.value,
     };
-    console.log(contactForm);
+    // console.log(contactForm);
     emailAPI.postMessage(contactForm)
       .then((res) => {
         setFormStatus('Send');
