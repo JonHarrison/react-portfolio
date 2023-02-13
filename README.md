@@ -22,7 +22,7 @@ This project is the initial scaffolding for my first React portfolio site as a s
 4. [Contributing](#contributing)
 5. [Tests](#tests)
 6. [Website](#website)
-7. [Links](#links
+7. [Links](#links)
 8. [Technologies Used](#technologies-used)
 9. [Questions](#questions)
 
@@ -59,7 +59,7 @@ npm test
 
 ## Links
 
-* [Link to the deployed website](https://github.com/JonHarrison/react-portfolio/deployments/activity_log?environment=github-pages)
+* [Link to the deployed website](https://jonharrison.github.io/react-portfolio/)
 * [Link to the code repository](https://github.com/JonHarrison/react-portfolio)
 
 ## Technologies Used
