@@ -45,7 +45,7 @@
   --iconTextForeground: #3e4141;
 }
 
-html, body {
+html, body, #root {
   width: 100%; /* allow body to grow as large as the content within it requires */
   height: 100%; /* allow body to grow as large as the content within it requires */
   margin: 0;
@@ -59,8 +59,8 @@ html, body {
 }
 
 #root {
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
 }
 
 ::-webkit-scrollbar {
