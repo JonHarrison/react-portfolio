@@ -15,8 +15,8 @@ function PortfolioCarousel({ projects }) {
 
     return (
         // fade activeIndex={index} onSelect={handleSelect}
-        <div className="root">
-            <Carousel className="carousel carousel-light slide">
+        // <div className="root">
+            <Carousel className="carousel carousel-light slide w-100">
                 {/* <div className="carousel-inner"> */}
                     {/* <Carousel.Item className="carousel-item item active">
                         <div className="carousel-image">
@@ -56,7 +56,7 @@ function PortfolioCarousel({ projects }) {
                     })}
                 {/* </div> */}
             </Carousel>
-        </div>
+        // </div>
     );
 
 }
