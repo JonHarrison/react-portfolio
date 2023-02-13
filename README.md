@@ -54,6 +54,8 @@ npm test
 
 ## Website image
 
+![Website image](https://user-images.githubusercontent.com/1043077/218472368-cd1deace-3589-4245-948b-c2d752d50102.png)
+
 ## Technologies Used
 
 - React v18.2.0
