@@ -56,7 +56,7 @@
 /* mobile first layout */
 @media screen and (min-width: 576px) {
   .project-container {
-    flex-direction: row;
+    /* flex-direction: row; */
     /* display: flex;
     flex-flow: row wrap; */
     /* flex-direction: column; */

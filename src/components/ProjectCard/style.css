@@ -130,13 +130,13 @@
 } */
 
 @media screen and (max-width: 1024px) {
-  .card {
-    /* width: 33vw; */
+  .project-item {
+    /* max-width: 33vw; */
   }
 }
 
 @media screen and (max-width: 600px) {
-  .card {
-    /* width: 50vw; */
+  .project-item {
+    /* max-width: 50vw; */
   }
 }
