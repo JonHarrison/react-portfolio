@@ -10,7 +10,7 @@ import Headshot from '../../assets/images/1043077.png';
 
 const About = () => {
   return (
-    <div className="container about about-container">
+    <div className="about about-container container">
       <h1>About me</h1>
       <div className="headshot">
         <img src={Headshot} alt="Headshot" />

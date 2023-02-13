@@ -37,7 +37,7 @@ const Contact = (props) => {
   const inlineStyles = { width: '100%', maxWidth: '450px' };
 
   return (
-    <div className="contact container mt-5 justify-center text-center" style={inlineStyles} >
+    <div className="contact container" style={inlineStyles} >
       <h2 className="mb-3">How can I help you ?</h2>
       <Form className="grid" onSubmit={onSubmit}>
         <Form.Group className="mb-3" controlId="contactForm.fullnameInput">
