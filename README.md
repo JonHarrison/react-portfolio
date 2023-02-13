@@ -13,7 +13,7 @@
   
 ## Description
 
-This project is the initial scaffolding for your first React portfolio site. 
+This project is the initial scaffolding for my first React portfolio site as a single page application using react-router for navigation. 
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -21,7 +21,7 @@ This project is the initial scaffolding for your first React portfolio site.
 3. [License](#license)
 4. [Contributing](#contributing)
 5. [Tests](#tests)
-6. [Example](#example)
+6. [Website](#website)
 7. [Technologies Used](#technologies-used)
 8. [Questions](#questions)
 
@@ -52,7 +52,9 @@ This project includes unit tests written using the Jest framework, to run the te
 npm test
 ```
 
-## Website image
+## Website
+
+![Live website](https://github.com/JonHarrison/react-portfolio/deployments/activity_log?environment=github-pages)
 
 ![Website image](https://user-images.githubusercontent.com/1043077/218472368-cd1deace-3589-4245-948b-c2d752d50102.png)
 
