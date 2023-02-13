@@ -26,7 +26,7 @@ const Header = props => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
               <LinkContainer to="/about"><Nav.Link>About</Nav.Link></LinkContainer>
-              <NavDropdown variant="dark" className="dropdown-menu-dark" title="Portfolio" id="basic-nav-dropdown">
+              <NavDropdown variant="dark" className="dropdown-menu-dark" align="end" title="Portfolio" id="basic-nav-dropdown">
                 <LinkContainer to="/portfolio">
                   <NavDropdown.Item>All</NavDropdown.Item>
                 </LinkContainer>
